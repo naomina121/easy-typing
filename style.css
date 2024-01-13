@@ -1,0 +1,82 @@
+.container {
+	max-width: 744px;
+	background-color: #111;
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.main {
+	background: #ccc;
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.main p.start-text {
+	font-size: 20px;
+	font-weight: bold;
+	color: #212121;
+	text-align: center;
+}
+
+.main .word-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border: 3px solid #fff;
+	max-width: 90%;
+	border-radius: 6px;
+	padding: 10px;
+}
+
+.main.start {
+	background: radial-gradient(ellipse at bottom, #5091dd 0%, #030617 100%);
+}
+.main.done {
+	padding: 10px;
+	color: #fff;
+}
+
+.main.done .result-text {
+	font-size: 30px;
+	letter-spacing: 1.5px;
+	margin-right: 20px;
+}
+
+.main.done .score {
+	margin-right: 10px;
+}
+
+.main.done .miss-text {
+	margin-right: 10px;
+}
+
+.main.done .retry-text {
+	cursor: pointer;
+	color: yellow;
+	font-weight: 600;
+}
+
+.main #word span.done {
+	color: #ccc;
+}
+
+.main #word span.miss {
+	color: #f00;
+}
+
+.main .time-text {
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
